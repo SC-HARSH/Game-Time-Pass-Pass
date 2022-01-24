@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body onload="update()">
+    <div class="row1">
+        <h4 id="name_1" class="margin_name"></h4>
+        <span id="player_score1"> </span>
+    </div>
+    <br>
+    <div class="row1">
+        <h4 id="name_2" class="margin_name"></h4>
+        <span id="player_score2"></span>
+    </div>
+    <div class="container">
+        <center>
+            <h2 id="title">Guess The Word</h3>
+                <h3 id="question_player"></h3>
+                <h3 id="answer_player"></h3>
+                <div id="output" class="col-lg-6">
+                </div>
+                <br>
+                <br>
+                <h1 id="wrongTime"></h1>
+                <label>Send Your Word: <b style="color: red;">Try to put 5 digit word or more.</b></label>
+                <input id="word" class="form-control" type="text" placeholder="Word" style="width: 400px;">
+                <br>
+                <button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+                <h1 id="Answer"></h1>
+                <h1 id="Question"></h1>
+        </center>
+    </div>
+</body>
+
+</html>
